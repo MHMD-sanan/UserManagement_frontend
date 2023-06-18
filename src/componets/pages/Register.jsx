@@ -52,7 +52,7 @@ const Register = () => {
     try {
       console.log("call");
       const { data } = await axios.post(
-        "http://localhost:4000/register",
+        "https://localhost:4000/register",
         values,
         config
       );

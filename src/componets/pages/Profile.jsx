@@ -73,7 +73,7 @@ const Profile = () => {
             <tbody className="">
               {data &&
                 Object.entries(data).map(([key, value]) => (
-                  <tr className="text-[#7181A1] text-sm">
+                  <tr key={key} className="text-[#7181A1] text-sm">
                     <td class="pr-3 py-2">{key}</td>
                     <td className="">{value} </td>
                   </tr>

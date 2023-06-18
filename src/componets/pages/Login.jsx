@@ -41,7 +41,8 @@ const Login = () => {
       localStorage.setItem("authToken", data.token);
       navigate("/");
     } catch (error) {
-      generateError(error.response.data.error);
+      const err=error?.response?.data.err || "Server error"
+      generateError(err);
     }
   };
   const generateError = (err) => {
